@@ -1,0 +1,6 @@
+LOOP                                                                       x3004
+OUTSIDE                                                                    x300B
+user_input                                                                 x3014
+output_message                                                             x3041
+empty_line                                                                 x3054
+store_message                                                              x308B

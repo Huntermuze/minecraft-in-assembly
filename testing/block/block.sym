@@ -1,0 +1,10 @@
+clear                                                                      x3000
+init_str                                                                   x3008
+get_pos_str                                                                x3027
+y_decremented_str                                                          x3062
+get_block_str                                                              x309D
+increment_block_str                                                        x30C1
+new_block_str                                                              x30DF
+set_block_str                                                              x30FF
+print_registers                                                            x3136
+end_program                                                                x3138

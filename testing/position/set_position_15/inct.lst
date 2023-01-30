@@ -1,0 +1,14 @@
+  ADDR  |  HEX  |      BINARY      |  LN  |  ASSEMBLY
+        |       |                  |    1 | .ORIG x3000
+        |       |                  |    2 | 
+        |       |                  |    3 | 
+ x3000  | xF034 | 1111000000110100 |    4 | trap x34 ; calls get position trap, stores x,y&z values in r2,r3 and r4
+ x3001  | xF040 | 1111000001000000 |    5 | trap x40
+ x3002  | x14AF | 0001010010101111 |    6 | add r2, r2, #15 ;adds 15 units to the values 
+ x3003  | x16EF | 0001011011101111 |    7 | add r3, r3, #15
+ x3004  | x192F | 0001100100101111 |    8 | add r4, r4, #15
+        |       |                  |    9 | 
+ x3005  | xF036 | 1111000000110110 |   10 | trap x36; returns the values into the python file and teleports the player in minecraft
+ x3006  | xF040 | 1111000001000000 |   11 | trap x40
+ x3007  | xF025 | 1111000000100101 |   12 | HALT
+        |       |                  |   13 | .END
